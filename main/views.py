@@ -14,7 +14,6 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 @login_required(login_url='/login')
-
 def show_main(request):
     products = Product.objects.all()
 
